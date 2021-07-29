@@ -1,0 +1,164 @@
+.work {
+    padding: 20px 0px;
+    margin: 0px 100px;
+    .work-filters {
+        display: flex;
+        justify-content: flex-end;
+        margin: 50px 0px;
+        &__wrapper {
+            margin-left: 10px;
+            .filters-label {
+                font-size: 30px;
+                color: $dark-border-color;
+                margin-right: 5px;
+            }
+            .filter {
+                width: auto;
+                padding-right: 15px;
+                font-size: 30px;
+                color: $black-color;
+                font-weight: bold;
+                border: 0;
+                border-bottom: 1px solid;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                background-color: $white-color;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAACaADAAQAAAABAAAABwAAAACQcifAAAAAg0lEQVQYGWPk5+df+////yAGHICRkXEdo4iIiOTv37+vARUKoKsDKvjAysqqxfzt27cvHBwcb4AK/LAoyn3//v0huDjQ2n18fHz/YRjI3w80nRGkgAmmCiiQBjT+O5T/g42NDcT/D5OH00DdpSCTgHQ5XBCdERoaygxUMMfBwYEFWQ4A2Bwqe76Ftq8AAAAASUVORK5CYII=);
+                background-repeat: no-repeat;
+                background-position: right 0 top 50%, 0 0;
+                background-size: 10px auto, 100%;
+            }
+        }
+    }
+    .work-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid $input-border-color;
+        .work-card {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            margin-top: 25px;
+            &--card-name {
+                font-size: 15px;
+                font-family: 'Arial';
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 20px 0px;
+                color: $light-font-color;
+            }
+            &--card-summary {
+                font-size: 30px;
+                font-family: 'Teko-Regular';
+                line-height: 1.07;
+            }
+            &--card-image {
+                max-height: 450px;
+                height: 35vh;
+            }
+            &--card-mul-summary {
+                font-size: 24px;
+                font-family: 'Teko-Regular';
+                line-height: 1.07;
+            }
+            .mul-work-card {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+            }
+            &.showcase {
+                width: 64%;
+            }
+            &.multi-cards {
+                width: 35%;
+                border-top: 1px solid $input-border-color;
+                border-bottom: 1px solid $input-border-color;
+                height: min-content;
+                padding-bottom: 100px;
+                &--card-summary {
+                    font-size: 24px;
+                    font-family: 'Teko-Regular';
+                    line-height: 1.07;
+                }
+            }
+            &.feedback {
+                border-top: 1px solid $dark-border-color;
+                padding: 8mm 20%;
+                width: 100%;
+                text-align: center;
+                .work-card--card-by {
+                    padding: 10mm;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .work {
+        .work-cards {
+            .work-card {
+                &--card-image {
+                    max-height: 400px;
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .work {
+        padding: 10px;
+        margin: 10px;
+        .work-filters {
+            width: 90%;
+            flex-direction: column;
+            justify-content: start;
+            margin: 0px 20px;
+            &__wrapper {
+                margin-left: 0px;
+            }
+        }
+        .work-cards {
+            justify-content: center;
+            .work-card {
+                width: 90%;
+                &--card-image {
+                    max-height: 400px;
+                    height: 30vh;
+
+                }
+                .mul-work-card {
+                    width: 90%;
+                }
+                &.showcase {
+                    width: 90%;
+                }
+                &.multi-cards {
+                    width: 90%;
+                    padding-bottom: 0px;
+                }
+                &.feedback {
+                    padding: 6mm;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .work {
+        .work-cards {
+            .work-card {
+                &--card-image {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

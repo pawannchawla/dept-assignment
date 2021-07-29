@@ -1,0 +1,37 @@
+.btn {
+    width: 170px;
+    border: 0;
+    height:50px;
+    padding: 10px;
+    &--view-case {
+        background-color: $black-color;
+        color: $white-color;
+    }
+    &--link-view-case {
+        background-color: #ffffff;
+        color: #1a18f7;
+        width: auto;
+        text-align: left;
+        height: auto;
+        padding: 0px;
+        margin: 20px 0px;
+        &::before {
+            content: "";          
+            width: 0px;
+            font-size: 0px;
+            height: 0px;
+            vertical-align: middle;
+            border-style: solid;
+            border-width: 3px 0 3px 6px;
+            padding-right: 6px;
+            border-color: transparent transparent transparent $blue-color;
+        }
+    }
+    &--contactus {
+        text-transform: uppercase;
+        color: $white-color;
+        background-color: $blue-color;
+        cursor: pointer;
+    }
+    
+}

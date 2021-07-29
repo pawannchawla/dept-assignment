@@ -1,0 +1,17 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "header.scss";
+@import "menu.scss";
+@import "button.scss";
+@import "work.scss";
+@import "clients.scss";
+@import "contactus.scss";
+@import "footer.scss";
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Teko-Regular', sans-serif;
+    font-size: 5mm;
+    color: $black-color;
+    box-sizing: border-box;
+}
