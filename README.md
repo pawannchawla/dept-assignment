@@ -73,3 +73,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Technical Debt
+
+If I could spend more time on the assigment, would add the REST calls to fetch the JSON data instead of mocking it from the project. 
+Would implement the filtering of work cards and form validations.
