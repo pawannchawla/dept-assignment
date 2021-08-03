@@ -1,3 +1,4 @@
+import React from 'react';
 const WorkCardItem = ({cardData}) => {
     const getMultiCards = (multiInfo) => {
         const multiCards = multiInfo.map((item, idx) => (
@@ -17,10 +18,20 @@ const WorkCardItem = ({cardData}) => {
             {cardData.image !== "NA" && 
                 <img className="work-card--card-image" src={cardData.image} alt={cardData.name} />
             } 
-                {!feedback && <span className="work-card--card-name">{cardData.name}</span>}
-                <span className="work-card--card-summary">{cardData.summary}</span>
-                {feedback && <span className="work-card--card-by">{cardData.by}</span>}
-                {!feedback && <button className="btn btn--link-view-case">VIEW CASE</button>}
+                {!feedback ?
+                    <React.Fragment>
+                        <span className="work-card--card-name">{cardData.name}</span>
+                        <span className="work-card--card-summary">{cardData.summary}</span>
+                        <span className="work-card--card-by">{cardData.by}</span>
+                        <button className="btn btn--link-view-case">VIEW CASE</button>
+                    </React.Fragment>
+                : 
+                    <React.Fragment>
+                        <span className="work-card--card-summary">{cardData.summary}</span>
+                        <span className="work-card--card-by">{cardData.by}</span>
+                    </React.Fragment>
+                }
+                
         </section>
         : <section className="work-card multi-cards">
             {getMultiCards(multiInfo)}
